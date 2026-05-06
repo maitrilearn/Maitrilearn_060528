@@ -1,0 +1,36 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f4f7fb;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+input,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.preview-box {
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MaitriLearn</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+  <h1>📚 MaitriLearn</h1>
+
+  <!-- NOTES -->
+
+  <section>
+
+    <h2>Upload Notes</h2>
+
+    <input id="classInput" placeholder="Class">
+
+    <input id="subjectInput" placeholder="Subject">
+
+    <input id="topicInput" placeholder="Topic">
+
+    <input type="file" id="fileInput">
+
+    <button onclick="uploadNote()">
+      Upload
+    </button>
+
+  </section>
+
+  <section>
+
+    <h2>Search Notes</h2>
+
+    <input id="searchInput" placeholder="Search">
+
+    <button onclick="searchNotes()">
+      Search
+    </button>
+
+    <div id="notesList"></div>
+
+  </section>
+
+  <!-- PREVIEW -->
+
+  <div id="previewBox" class="preview-box">
+
+    <button onclick="closePreview()">
+      Close
+    </button>
+
+    <div id="previewContent"></div>
+
+    <hr>
+
+    <h3>❓ Ask Doubt</h3>
+
+    <input id="doubtInput">
+
+    <button onclick="askDoubt()">
+      Ask
+    </button>
+
+    <div id="answerBox"></div>
+
+  </div>
+
+  <!-- AI TUTOR -->
+
+  <section>
+
+    <h2>🎓 AI Tutor (Beta 🚧)</h2>
+
+    <input id="tutorInput">
+
+    <button onclick="runTutor()">
+      Teach Me
+    </button>
+
+    <div id="tutorOutput"></div>
+
+  </section>
+
+  <!-- FEEDBACK -->
+
+  <section>
+
+    <h2>💬 Feedback</h2>
+
+    <textarea id="feedbackInput"></textarea>
+
+    <button onclick="submitFeedback()">
+      Send Feedback
+    </button>
+
+    <p id="feedbackStatus"></p>
+
+  </section>
+
+  <script src="js/config/config.js"></script>
+
+  <script src="js/services/supabaseService.js"></script>
+
+  <script src="js/services/notesService.js"></script>
+
+  <script src="js/services/doubtService.js"></script>
+
+  <script src="js/services/tutorService.js"></script>
+
+  <script src="js/services/feedbackService.js"></script>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
