@@ -1,0 +1,7 @@
+const SUPABASE_URL = "https://rairwoyaesgvezxyztnq.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJhaXJ3b3lhZXNndmV6eHl6dG5xIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1NTIwODcsImV4cCI6MjA3NzEyODA4N30.1TxIpecWR2YoP_6wz-Ifs3VWWfuhLND5ob3pLYzJM_g";
+
+const GROQ_API_KEY = "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";
+
+const TELEGRAM_BOT_TOKEN = "8396975138:AAGaZsENp0QnA_3Ia73c4vxaXaW85cyU_gk";
+const TELEGRAM_CHAT_ID = "5770212985";
